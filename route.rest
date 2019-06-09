@@ -1,0 +1,25 @@
+GET http://localhost:3000/subscribers
+
+###
+
+GET http://localhost:3000/subscribers/5cfca47bb887642bb2f3db82
+
+###
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name": "Samuel Tam",
+    "subscribedToChannel": "Astro's cats"
+}
+
+###
+DELETE http://localhost:3000/subscribers/5cfca47bb887642bb2f3db82
+
+###
+PATCH http://localhost:3000/subscribers/5cfca47bb887642bb2f3db82
+Content-Type: application/json
+
+{
+    "name":"Samuel Dumb"
+}
